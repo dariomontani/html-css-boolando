@@ -11,7 +11,7 @@ main{
     padding: 20px 100px;
 }
 
-.row-1 > div, .row-2 > div{
+.row-1-left, .row-1-centre{
     height: 500px;
     width: 350px;
     background-color: greenyellow;
@@ -130,6 +130,13 @@ h3{
 .img-row-1-centre{
     height: 100%;
     background-image: url(../img/2.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-row-1-centre:hover{
+    height: 100%;
+    background-image: url(../img/2b.webp);
     background-size: cover;
     background-position: center;
 }
