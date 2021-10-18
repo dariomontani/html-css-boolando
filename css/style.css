@@ -10,7 +10,7 @@ main{
     padding: 20px 100px;
 }
 
-.row-1 div, .row-2 div{
+.row-1 > div, .row-2 > div{
     height: 500px;
     width: 250px;
     background-color: greenyellow;
@@ -27,6 +27,7 @@ main{
 .row-1-centre, .row-2-centre{
     margin: 0 20px;
 }
+
 
 .clearfix::after{
     content: '';
