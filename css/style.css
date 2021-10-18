@@ -13,7 +13,7 @@ main{
 
 .row-1 > div, .row-2 > div{
     height: 500px;
-    width: 250px;
+    width: 350px;
     background-color: greenyellow;
     border: 1px solid red;
     float: left;
@@ -22,7 +22,6 @@ main{
 .row-1, .row-2{
     border: 1px solid red;
     margin-bottom: 100px;
-    text-align: center;
 }
 
 .row-1-centre, .row-2-centre{
@@ -30,13 +29,15 @@ main{
 }
 
 .heart{
+    text-align: center;
     height: 40px;
     width: 40px;
     font-size: 1.5em;
     background-color: white;
     line-height: 40px;
-    float: right;
-    margin-top: 15px;
+    position: absolute;
+    top: 15px;
+    right: 0;
 }
 
 .heart:hover{
@@ -46,11 +47,15 @@ main{
     font-size: 1.5em;
     background-color: white;
     line-height: 40px;
-    float: right;
-    margin-top: 15px;
+    position: absolute;
 }
 
-.row-1-left{
+.row-1-left,
+.row-1-centre,
+.row-1-right,
+.row-2-left,
+.row-2-centre,
+.row-2-right{
     position: relative;
 }
 
@@ -65,6 +70,7 @@ main{
     left: 0px;
     bottom: 15px;
     line-height: 2em;
+    text-align: center;
 }
 
 .sostenibilità{
@@ -78,9 +84,55 @@ main{
     left: 3.2em;
     bottom: 15px;
     line-height: 2em;
+    text-align: center;
 }
 
+.description{
+    position: absolute;
+    left: 0;
+    top: 101%;
+}
 
+p{
+    font-weight: 300;
+}
+
+h3{
+    font-size: large;
+}
+
+.price{
+    font-size: small;
+}
+
+.red-price{
+    color: red;
+}
+
+.line{
+    text-decoration: line-through;
+}
+
+.img-row-1-left{
+    height: 100%;
+    background-image: url(../img/1.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-row-1-left:hover{
+    height: 100%;
+    background-image: url(../img/1b.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-row-1-centre{
+    height: 100%;
+    background-image: url(../img/2.webp);
+    background-size: cover;
+    background-position: center;
+}
 
 .clearfix::after{
     content: '';
