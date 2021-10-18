@@ -15,7 +15,7 @@ main{
     width: 250px;
     background-color: greenyellow;
     border: 1px solid red;
-    display: inline-block;
+    float: left;
 }
 
 .row-1, .row-2{
@@ -27,6 +27,28 @@ main{
 .row-1-centre, .row-2-centre{
     margin: 0 20px;
 }
+
+.heart{
+    height: 40px;
+    width: 40px;
+    font-size: 1.5em;
+    background-color: white;
+    line-height: 40px;
+    float: right;
+    margin-top: 15px;
+}
+
+.heart:hover{
+    color: red;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5em;
+    background-color: white;
+    line-height: 40px;
+    float: right;
+    margin-top: 15px;
+}
+
 
 
 .clearfix::after{
