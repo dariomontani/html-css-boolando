@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 100px;
+}
+
+.row-1 div, .row-2 div{
+    height: 500px;
+    width: 250px;
+    background-color: greenyellow;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.row-1, .row-2{
+    border: 1px solid red;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.row-1-centre, .row-2-centre{
+    margin: 0 20px;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
